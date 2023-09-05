@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile page - Communal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7ce0bae4a2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="img/logo.png" class="logo" />
+        <ul>
+          <li><img src="img/notification.png" alt="" /></li>
+          <li><img src="img/inbox.png" alt="" /></li>
+          <li><img src="img/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="img/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="img/profile-pic1.jpg" />
+        </div>
+      </div>
+      <!-- Settings Menu -->
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="img/profile-pic1.jpg" />
+            <div>
+              <p>Nick Walter</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="img/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-links">
+            <img src="img/setting.png" class="settings-icon" />
+            <a href="#"
+              >Settings & Privacy <img src="img/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="img/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support <img src="img/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="img/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility <img src="img/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="setting-links">
+            <img src="img/logout.png" class="settings-icon" />
+            <a href="#">Logout <img src="img/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile page -->
+    <div class="profile-container">
+      <img src="img/cover.png" class="cover-img" />
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="img/photo2.png" class="pd-image" />
+            <div>
+              <h3>Nick Walter</h3>
+              <p>245 Friends - 34 mutual</p>
+              <img src="img/member-1.png" />
+              <img src="img/member-2.png" />
+              <img src="img/member-5.png" />
+              <img src="img/member-6.png" />
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button type="button">
+            <img src="img/add-friends.png" /> Friend
+          </button>
+          <button type="button"><img src="img/message.png" /> Message</button>
+          <br />
+          <a href=""><img src="img/more.png" /></a>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-col">
+          <div class="profile-intro">
+            <h3>Intro</h3>
+            <p class="intro-text">
+              Believe in yourself and you can do unbelievable things.
+              <img src="img/feeling.png" />
+            </p>
+            <hr />
+            <ul>
+              <li>
+                <img src="img/profile-job.png" /> Senior Maneger at Google
+              </li>
+              <li>
+                <img src="img/profile-study.png" /> Studied at S'O'A University
+              </li>
+              <li><img src="img/profile-study.png" />Went to DPS Jhakri</li>
+              <li>
+                <img src="img/profile-home.png" />Lives in Bangalore, India
+              </li>
+              <li><img src="img/profile-location.png" />From Delhi, India</li>
+            </ul>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+                <h3>Photos</h3>
+                <a href="">All Photos</a>
+            </div>
+            <div class="photo-box">
+                <div><img src="img/photo2.png"></div>
+                <div><img src="img/photo1.png"></div>
+                <div><img src="img/photo3.png"></div>
+                <div><img src="img/photo5.png"></div>
+                <div><img src="img/photo6.png"></div>
+                <div><img src="img/photo4.png"></div>
+            </div>
+          </div>
+
+          <div class="profile-intro">
+            <div class="title-box">
+                <h3>Friends</h3>
+                <a href="">All Friends</a>
+            </div>
+            <p>128 (10 mutual)</p>
+            <div class="friends-box">
+                <div><img src="img/member-5.png"><p>Nile Kundra</p></div>
+                <div><img src="img/member-2.png"><p>Andrew Kate</p></div>
+                <div><img src="img/member-3.png"><p>Moana Patric</p></div>
+                <div><img src="img/member-8.png"><p>Mohak Mehra</p></div>
+                <div><img src="img/member-6.png"><p>Alisa Saloni</p></div>
+                <div><img src="img/member-7.png"><p>K Patric</p></div>
+                <div><img src="img/member-4.png"><p>Joseph Will</p></div>
+                <div><img src="img/member-1.png"><p>Alice Willson</p></div>
+                <div><img src="img/member-9.png"><p>Ku. Rajendra</p></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="post-col">
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="img/profile-pic1.jpg" />
+              <div>
+                <p>Nick Walter</p>
+                <small>Public <i class="fa-solid fa-caret-down"></i></small>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea
+                rows="3"
+                placeholder="Open up your mind, Nick!"
+              ></textarea>
+              <div class="add-post-links">
+                <a href="#"><img src="img/live-video.png" />Live Video</a>
+                <a href="#"><img src="img/photo.png" />Photo, Video</a>
+                <a href="#"><img src="img/feeling.png" />My Feelings</a>
+              </div>
+            </div>
+          </div>
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic1.jpg" />
+                <div>
+                  <p>Nick Walter</p>
+                  <span>21-October-2022 <b>|</b> 14:32 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-thumbtack"></i></a>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Follow my Communnity locus <span>@Nick's Community</span> to get
+              more information about website design & development.
+              <a href="#">#Nick'sCommunity</a> <a href="#">#WebDevCommunal</a>
+            </p>
+            <img src="img/feed-image-1.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />378</div>
+                <div><img src="img/comments.png" />56</div>
+                <div><img src="img/share.png" />204</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic1.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic1.jpg" />
+                <div>
+                  <p>Nick Walter</p>
+                  <span>20-October-2022 <b>|</b> 09:37 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Enjoying some amazing morning moments with my
+              <span>@Nick's Community</span> gang. It was nice to have some
+              worthful discussion in the nature's lap about our future plans for
+              you guys. Guess what we're UPTO? <a href="#">#Nick'sCommunity</a>
+              <a href="#">#Web3</a>
+            </p>
+            <img src="img/feed-image-2.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />421</div>
+                <div><img src="img/comments.png" />106</div>
+                <div><img src="img/share.png" />89</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic1.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic1.jpg" />
+                <div>
+                  <p>Nick Walter</p>
+                  <span>17-October-2022 <b>|</b> 11:23 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              After a long time, having fun with my childhood friends. Us Moment
+              with <span>@Wonder Emma</span>, <span>@Jonathan Milch</span>,
+              <span>@Ava Emily</span>, <span>@Henry J.</span>
+              <a href="#">#friendsforever</a>
+            </p>
+            <img src="img/feed-image-3.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />2k</div>
+                <div><img src="img/comments.png" />265</div>
+                <div><img src="img/share.png" />229</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic1.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic1.jpg" />
+                <div>
+                  <p>Nick Walter</p>
+                  <span>15-October-2022 <b>|</b> 10:12 am</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Meet my life-partner as well as business-partner
+              <span>@Isabella J. Walter</span>. I'm glad to say that she is now
+              the part of our community. <a href="#">#Nick'sCommunity</a>
+            </p>
+            <img src="img/feed-image-4.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />20.5k</div>
+                <div><img src="img/comments.png" />835</div>
+                <div><img src="img/share.png" />423</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic1.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="img/profile-pic1.jpg" />
+                <div>
+                  <p>Nick Walter</p>
+                  <span>10-October-2022 <b>|</b> 16:45 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text"><b>Get together Monday.</b></p>
+            <p class="post-text">
+              A chill morning healthy discussion with my fellow members & our
+              Clints.
+            </p>
+            <img src="img/feed-image-5.png" class="post-img" />
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div><img src="img/like.png" />2.1k</div>
+                <div><img src="img/comments.png" />352</div>
+                <div><img src="img/share.png" />451</div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="img/profile-pic1.jpg" /><i
+                  class="fa-solid fa-caret-down"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright &copy; 2022 - Communal</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
